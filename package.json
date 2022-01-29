@@ -5,8 +5,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "0x src/server.js",
-    "test": "node tests/benchmark/benchmark.js"
+    "start": "node src/server.js"
   },
   "keywords": [],
   "author": "",
