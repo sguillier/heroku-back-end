@@ -1,0 +1,26 @@
+[
+  {
+    "id": "seba@correo.com",
+    "password": "$2b$10$e/egFx/V9VCK6iAs9HEZk.CkF.uAgx0ygvDjjA8ArGj9kqOuoMYry",
+    "firstname": "Sebastian",
+    "lastname": "Guillier",
+    "age": "39",
+    "avatar": "https://cdn2.iconfinder.com/data/icons/avatars-60/5985/13-Captain-256.png"
+  },
+  {
+    "id": "planetatierra@correo.com",
+    "password": "$2b$10$TSz/jPf.oVljDW9V31bHN.Oxoy8Qgjx8VDfxNMQaZqEyyrmjuz0u2",
+    "firstname": "Planeta",
+    "lastname": "Tierra",
+    "age": "1000000",
+    "avatar": "https://cdn2.iconfinder.com/data/icons/avatars-60/5985/31-Mother-256.png"
+  },
+  {
+    "id": "nuevo@correo.com",
+    "password": "$2b$10$P8JPUINFFipq19gf9EnWueFDCjcX9FltAKK99GH3k1G0HCl2vtoU6",
+    "firstname": "Nuevo",
+    "lastname": "Sebas",
+    "age": "39",
+    "avatar": "https://cdn2.iconfinder.com/data/icons/avatars-60/5985/7-Assistant-256.png"
+  }
+]

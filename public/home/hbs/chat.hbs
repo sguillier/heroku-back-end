@@ -1,0 +1,32 @@
+<style>
+    .chat-mail {
+        color: blue;
+        font-weight: bold;
+    }
+
+    .chat-hora {
+        color: brown;
+    }
+
+    .chat-text {
+        color: green;
+        font-style: italic;
+    }
+
+    .chat-img {
+        height: 40px;
+    }
+</style>
+{{#if chat.length}}
+{{#each chat}}
+<p>
+    <span class="chat-mail"> {{this.user.id}} </span>
+    <span class="chat-hora"> {{this.hora}} </span> :
+    <span class="chat-text"> {{this.text}} </span>
+    <img class="chat-img" src={{this.user.avatar}}>
+</p>
+{{/each}}
+<hr>
+{{ else }}
+<h3 class="alert alert-warning">Sin mensajes</h3>
+{{/if}}

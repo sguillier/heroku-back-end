@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "text": "Hola Mundo",
+    "hora": "[4/1/2022 17:54:09]",
+    "user": {
+      "id": "seba@correo.com",
+      "firstname": "Sebastian",
+      "lastname": "Guillier",
+      "age": "39",
+      "avatar": "https://cdn2.iconfinder.com/data/icons/avatars-60/5985/13-Captain-256.png"
+    }
+  },
+  {
+    "id": 2,
+    "text": "Hola Sebastian",
+    "hora": "[4/1/2022 17:55:47]",
+    "user": {
+      "id": "planetatierra@correo.com",
+      "firstname": "Planeta",
+      "lastname": "Tierra",
+      "age": "1000000",
+      "avatar": "https://cdn2.iconfinder.com/data/icons/avatars-60/5985/31-Mother-256.png"
+    }
+  },
+  {
+    "id": 3,
+    "text": "Soy una chica, la tierra",
+    "hora": "[4/1/2022 17:56:06]",
+    "user": {
+      "id": "planetatierra@correo.com",
+      "firstname": "Planeta",
+      "lastname": "Tierra",
+      "age": "1000000",
+      "avatar": "https://cdn2.iconfinder.com/data/icons/avatars-60/5985/31-Mother-256.png"
+    }
+  },
+  {
+    "id": 4,
+    "text": "Genial!!",
+    "hora": "[4/1/2022 17:56:44]",
+    "user": {
+      "id": "seba@correo.com",
+      "firstname": "Sebastian",
+      "lastname": "Guillier",
+      "age": "39",
+      "avatar": "https://cdn2.iconfinder.com/data/icons/avatars-60/5985/13-Captain-256.png"
+    }
+  }
+]

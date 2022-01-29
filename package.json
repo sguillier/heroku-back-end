@@ -1,0 +1,28 @@
+{
+  "type": "module",
+  "name": "ejemplo-passport",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "0x src/server.js",
+    "test": "node tests/benchmark/benchmark.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "compression": "^1.7.4",
+    "dotenv": "^11.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "firebase-admin": "^10.0.1",
+    "mongodb": "^4.2.2",
+    "mongoose": "^6.1.4",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "socket.io": "^4.4.0",
+    "winston": "^3.4.0"
+  }
+}
