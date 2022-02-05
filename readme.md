@@ -1,9 +1,8 @@
 # Respuesta
 
-- Tarea semana 17 Coder House
-- El link de la sercicio desplegado en Heroku es
+- Tarea semana 17 curso Back-End Coder House
+- El link del servicio desplegado en Heroku es  `https://app-back-end-coder.herokuapp.com/`
 
-- En el arcchivo `src/daos/configDaos.js` de este repositorio se puede seleccionar la persistencia de los datos.
 
 
 
