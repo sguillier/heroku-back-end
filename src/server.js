@@ -67,7 +67,7 @@ const httpServer = await socketConnection(app, sessionMiddleware);
 
 /* --------- LISTEN ---------- */
 
-const PORT = 80
+const PORT = 8080
 const connectedServer = httpServer.listen(PORT, () => {
     console.log(`Servidor http escuchando en el puerto ${connectedServer.address().port}`)
 })
