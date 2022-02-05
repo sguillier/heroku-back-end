@@ -6,8 +6,8 @@
 // const persistencia = 'txt'
 // const persistencia = 'mongoose'
 // const persistencia = 'mongodb'
-// const persistencia = 'firebase'
-const persistencia = 'memoria'
+const persistencia = 'firebase'
+// const persistencia = 'memoria'
 
 
 
