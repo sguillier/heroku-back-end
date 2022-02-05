@@ -67,7 +67,7 @@ async function manejarEventoChat(chat) {
 
 
 const Temp = async () => {
-    const request = await fetch('http://localhost/api/auth/isauth')
+    const request = await fetch('https://app-back-end-coder.herokuapp.com/api/auth/isauth')
     const res = await request.json()
 
     console.log(res)
@@ -83,7 +83,7 @@ const Temp = async () => {
         document.getElementById('session-display').innerHTML = html
         const botonLogOut = document.getElementById("logout-button")
         botonLogOut.addEventListener('click', async () => {
-            const request = await fetch('http://localhost/api/auth/logout')
+            const request = await fetch('https://app-back-end-coder.herokuapp.com/api/auth/logout')
             html = `
             <div class="session-display-content">
                 <h2> Adios!! </h2>
@@ -94,7 +94,7 @@ const Temp = async () => {
             )
         })
     } else {
-        window.location.href = "http://localhost/login";
+        window.location.href = "https://app-back-end-coder.herokuapp.com/login";
     }
 }
 

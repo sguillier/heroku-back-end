@@ -10,7 +10,7 @@
 //     }
 
 
-//     const urlApi = 'http://localhost/api/session/login/'
+//     const urlApi = 'https://app-back-end-coder.herokuapp.com/api/session/login/'
 //     fetch(urlApi, {
 //         method: 'POST',
 //         body: JSON.stringify(data),
@@ -28,5 +28,5 @@
 
 const botonLogIn = document.getElementById("button-register")
 botonLogIn.addEventListener('click', async () => {
-    window.location.href = "http://localhost/register";
+    window.location.href = "https://app-back-end-coder.herokuapp.com/register";
 })
