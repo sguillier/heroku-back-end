@@ -32,7 +32,7 @@ import { createServer } from 'http';
 import { Server } from 'socket.io';
 
 
-export default async function socketConnection(app, sessionMiddleware, logger) {
+export default async function socketConnection(app, sessionMiddleware) {
 
     // Iniciamos el servidor http a partir de la aplicación express
     const httpServer = createServer(app);
@@ -46,7 +46,7 @@ export default async function socketConnection(app, sessionMiddleware, logger) {
 
 
     io.on('connection', async (socket) => {
-        logger.info(`[Socket conectado] socket.id: ${socket.id}`)
+        // console.log(`[Socket conectado] socket.id: ${socket.id}`)
 
         // Productos
         socket.emit('productos', await productos.getAllProducts());
@@ -55,7 +55,7 @@ export default async function socketConnection(app, sessionMiddleware, logger) {
                 await productos.saveProduct(e)
                 io.sockets.emit('productos', await productos.getAllProducts());
             } catch (err) {
-                logger.error(err)
+                console.error(err)
             }
         })
 
@@ -86,7 +86,7 @@ export default async function socketConnection(app, sessionMiddleware, logger) {
                     console.log("Para enviar mensajes el usuario debe estar logueado")
                 }
             } catch (err) {
-                logger.error(err)
+                console.error(err)
             }
         })
     });

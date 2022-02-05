@@ -1,5 +1,4 @@
 
-import logger from './logger/winston.js';
 import express from "express";
 import session from "express-session";
 
@@ -42,18 +41,18 @@ app.use(express.static('public'))
 /* --------------------- ROUTERS --------------------------- */
 
 import routerAuth from './routers/auth.js'
-app.use('/api/auth', logger.middlewareInfo, routerAuth(passport))
+app.use('/api/auth', routerAuth(passport))
 
 
 import routerRandoms from './routers/randoms.js'
-app.use('/api/randoms', logger.middlewareInfo, routerRandoms)
+app.use('/api/randoms', routerRandoms)
 
 
 import routerInfo from './routers/info.js'
-app.use('/info', logger.middlewareInfo, routerInfo)
+app.use('/info', routerInfo)
 
 
-app.get('/*', logger.middlewareWarn, (req, res) => {
+app.get('/*', (req, res) => {
   res.json({ mensaje:'Ruta inexistente' })
 })
 
@@ -61,7 +60,7 @@ app.get('/*', logger.middlewareWarn, (req, res) => {
 /* --------------------- SOCKET --------------------------- */
 
 import socketConnection from "./socket/socketConnection.js";
-const httpServer = await socketConnection(app, sessionMiddleware, logger);
+const httpServer = await socketConnection(app, sessionMiddleware);
 
 
 
