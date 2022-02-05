@@ -90,7 +90,7 @@ const Temp = async () => {
             </div>`
             document.getElementById('session-display').innerHTML = html
             setTimeout(
-                () => { window.location.href = "http://localhost" }, 1000
+                () => { window.location.href = "https://app-back-end-coder.herokuapp.com" }, 1000
             )
         })
     } else {

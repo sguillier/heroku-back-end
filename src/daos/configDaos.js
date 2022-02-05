@@ -3,11 +3,11 @@
 
 //
 // Aqui indicamos que tipo de persistencia usamos (hay que descomentar solo uno)
-// const persistencia = 'txt'
+const persistencia = 'txt'
 // const persistencia = 'mongoose'
 // const persistencia = 'mongodb'
 // const persistencia = 'firebase'
-const persistencia = 'memoria'
+// const persistencia = 'memoria'
 
 
 
