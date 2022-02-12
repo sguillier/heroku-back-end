@@ -48,7 +48,7 @@ formChat.addEventListener('submit', e => {
 // render-chat
 socket.on('chat', manejarEventoChat);
 async function manejarEventoChat(chat) {
-    
+
     // const chatNormalized = chat
     // const chatDenormalized = await denormalizeChat(chatNormalized)
     // chat = chatDenormalized ? (await chatDenormalized.originalMensajes) : []
@@ -67,7 +67,7 @@ async function manejarEventoChat(chat) {
 
 
 const Temp = async () => {
-    const request = await fetch('https://app-back-end-coder.herokuapp.com/api/auth/isauth')
+    const request = await fetch(URL_RAIZ + '/api/auth/isauth')
     const res = await request.json()
 
     console.log(res)
@@ -83,18 +83,18 @@ const Temp = async () => {
         document.getElementById('session-display').innerHTML = html
         const botonLogOut = document.getElementById("logout-button")
         botonLogOut.addEventListener('click', async () => {
-            const request = await fetch('https://app-back-end-coder.herokuapp.com/api/auth/logout')
+            const request = await fetch(URL_RAIZ + '/api/auth/logout')
             html = `
             <div class="session-display-content">
                 <h2> Adios!! </h2>
             </div>`
             document.getElementById('session-display').innerHTML = html
             setTimeout(
-                () => { window.location.href = "https://app-back-end-coder.herokuapp.com" }, 1000
+                () => { window.location.href = URL_RAIZ + "" }, 1000
             )
         })
     } else {
-        window.location.href = "https://app-back-end-coder.herokuapp.com/login";
+        window.location.href = URL_RAIZ + "/login";
     }
 }
 

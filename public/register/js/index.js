@@ -27,5 +27,5 @@
 
 const botonLogIn = document.getElementById("button-login")
 botonLogIn.addEventListener('click', async () => {
-    window.location.href = "https://app-back-end-coder.herokuapp.com/login";
+    window.location.href = URL_RAIZ + "/login";
 })
